@@ -1,8 +1,8 @@
 // let window= ('users', 'todos')
 let userid= prompt('your ID')
-let todo= prompt('What do you need to do')
+let todo= {title: prompt('What do you need to do')};
 let users= ['Amer', 'Nico', 'Elsi', 'Ed']
-let todolist= ['clean', 'kill', 'program', 'work on a project']
+let todolist= [{title:'clean'}, {title:'kill'}, {title:'program'}, {title:'work on a project'} ]
 let ID= ['Amer', 'Nico', 'Elsi', 'Ed']
     if(userid === 'Amer'){
         console.log(ID[0] + ' ' + 'you will' + ' ' + todo);
@@ -16,10 +16,14 @@ let ID= ['Amer', 'Nico', 'Elsi', 'Ed']
     else if(userid === 'Ed'){
         console.log(ID[3] + ' ' + 'you will' + ' ' + todo);
     }
-    if(todo=true){
-        todolist.push({todolist: todo})
-        console.log('this is the todo list' + ' ' + todolist)
+    for (let todo of todolist){
+        todolist.push(todo)
+        console.log(todolist.title)
     }
+    // if(todo){
+    //     todolist.push(todo)
+    //     console.log('this is the todo list' + `${todolist.title}`)
+    // }
     alert('Warning');
     if (alert=true){
         console.log ('users list' + ' ' + users)
