@@ -16,8 +16,8 @@ let ID= ['Amer', 'Nico', 'Elsi', 'Ed']
     else if(userid === 'Ed'){
         console.log(ID[3] + ' ' + 'you will' + ' ' + todo);
     }
+    todolist.push(todo)
     for (let todo of todolist){
-        todolist.push(todo)
         console.log(todolist.title)
     }
     // if(todo){
